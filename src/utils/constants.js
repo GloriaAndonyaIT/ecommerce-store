@@ -28,7 +28,7 @@ export const products = [
     originalPrice: 1499,
     rating: 4.8,
     reviews: 2547,
-    image: "/public/images/iphone 15 pro max black titanium.jpg", // Replace with your image
+    image: "https://i.pinimg.com/736x/d0/19/e9/d019e9eb433a315fc0b67750fe80b978.jpg", // Replace with your image
     category: "Electronics",
     brand: "Apple",
     inStock: true,
@@ -44,7 +44,7 @@ export const products = [
     originalPrice: 199,
     rating: 4.6,
     reviews: 1832,
-    image: "/public/images/Nike Air Max 270 Black White.jpg", // Replace with your image
+    image: "https://i.pinimg.com/736x/30/9f/02/309f0238c16c61e86549fb27818cb4a3.jpg", // Replace with your image
     category: "Fashion",
     brand: "Nike",
     inStock: true,
@@ -60,7 +60,7 @@ export const products = [
     originalPrice: 1199,
     rating: 4.7,
     reviews: 956,
-    image: "/public/images/Samsung titan gray.jpg", // Replace with your image
+    image: "https://i.pinimg.com/736x/5e/8c/15/5e8c15b37454372572f452bd2ecda131.jpg", // Replace with your image
     category: "Electronics",
     brand: "Samsung",
     inStock: true,
