@@ -1,15 +1,28 @@
-import { useState } from 'react'
+// src/App.jsx
+import React, { useState } from 'react';
+import Home from './pages/Home';
+import ProductPage from './pages/ProductPage';
+import { products } from './utils/constants';
 
-import './App.css'
+const App = () => {
+  const [currentPage, setCurrentPage] = useState('home');
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-function App() {
-  const [count, setCount] = useState(0)
+  const goToProduct = (product) => {
+    setSelectedProduct(product);
+    setCurrentPage('product');
+  };
 
-  return (
-    <div>
- 
-    </div>
-  )
-}
+  const goHome = () => {
+    setCurrentPage('home');
+    setSelectedProduct(null);
+  };
 
-export default App
+  if (currentPage === 'product' && selectedProduct) {
+    return <ProductPage product={selectedProduct} onBack={goHome} />;
+  }
+
+  return <Home onProductClick={goToProduct} />;
+};
+
+export default App;
